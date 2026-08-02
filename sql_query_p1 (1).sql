@@ -1,9 +1,8 @@
 -- SQL Retail Sales Analysis - P1
-CREATE DATABASE sql_project_p2;
+CREATE DATABASE sql_project_p1;
 
 
 -- Create TABLE
-DROP TABLE IF EXISTS retail_sales;
 CREATE TABLE retail_sales
             (
                 transaction_id INT PRIMARY KEY,	
@@ -19,15 +18,6 @@ CREATE TABLE retail_sales
                 total_sale FLOAT
             );
 
-SELECT * FROM retail_sales
-LIMIT 10
-
-
-    
-
-SELECT 
-    COUNT(*) 
-FROM retail_sales
 
 -- Data Cleaning
 SELECT * FROM retail_sales
@@ -84,7 +74,6 @@ SELECT COUNT(*) as total_sale FROM retail_sales
 -- How many uniuque customers we have ?
 
 SELECT COUNT(DISTINCT customer_id) as total_sale FROM retail_sales
-
 
 
 SELECT DISTINCT category FROM retail_sales
